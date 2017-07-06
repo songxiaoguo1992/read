@@ -162,7 +162,7 @@
 					var html="";
 					$.get("data/list.json", function(data) {
 						for(var i=0;i<data.lists.length;i++){
-							html="<div class='list_one'><a href='read.html'><img src='" + data.lists[i].url + "' /><div class='list_right'><span class='title'>" +data.lists[i].title + "</span><span class='autor'>作者：" + data.lists[i].autor + "</span><span class='time'>更新时间：" + data.lists[i].time + "</span></div></a></div>";
+							html="<div class='list_one'><a href='http://htmlpreview.github.io/?https://songxiaoguo1992.github.io/read/read.html'><img src='" + data.lists[i].url + "' /><div class='list_right'><span class='title'>" +data.lists[i].title + "</span><span class='autor'>作者：" + data.lists[i].autor + "</span><span class='time'>更新时间：" + data.lists[i].time + "</span></div></a></div>";
 							$('.list li').append(html);
 						}
 					}, 'json');
